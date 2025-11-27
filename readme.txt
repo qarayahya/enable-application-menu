@@ -14,33 +14,6 @@ Adds an application menu dropdown to the WordPress block editor with quick acces
 
 Enable Application Menu adds a convenient dropdown menu to the WordPress block editor toolbar. This menu provides quick access to commonly used admin pages without leaving the editor interface.
 
-= Features =
-
-* **Quick Access Dropdown**: Access key admin pages from a single menu
-* **Dashboard Navigation**: Go to the main WordPress dashboard
-* **Site Editor Access**: Quick links to Styles, Templates, and Patterns
-* **Media Library**: Direct access to the media library
-* **Plugin Management**: Navigate to the plugins page
-* **Clean Integration**: Uses native WordPress components and styling
-* **Lightweight**: Minimal overhead, uses built-in WordPress APIs
-
-= Menu Items =
-
-The application menu includes quick links to:
-* Dashboard - Main WordPress admin dashboard
-* Styles - Site editor global styles
-* Templates - Template management
-* Patterns - Pattern library
-* Media - Media library
-* Plugins - Plugin management
-
-= Perfect For =
-
-* Site builders who frequently switch between editor and admin
-* Content editors who need quick access to media and settings
-* Developers testing themes and plugins
-* Anyone who wants faster navigation in WordPress
-
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/enable-application-menu` directory, or install the plugin through the WordPress plugins screen.
@@ -63,16 +36,7 @@ Yes! The menu is available in the block editor for all post types.
 
 = Is it compatible with the Site Editor? =
 
-Yes, the menu works in both the post editor and site editor.
-
-= Does it affect site performance? =
-
-No, the plugin is very lightweight and only loads in the block editor admin interface.
-
-== Screenshots ==
-
-1. Application menu dropdown in the block editor toolbar
-2. Quick access to dashboard, styles, templates, and more
+No, the menu works only on the post editor.
 
 == Changelog ==
 
