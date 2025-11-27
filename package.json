@@ -1,0 +1,26 @@
+{
+	"name": "enable-application-menu",
+	"version": "1.0.0",
+	"description": "Adds an application menu dropdown to the WordPress block editor with quick access to dashboard, styles, templates, patterns, media, and plugins.",
+	"author": "blocklayouts",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.10.0"
+	},
+	"dependencies": {
+		"@emotion/styled": "^11.14.0",
+		"@wordpress/icons": "^11.2.0",
+		"classnames": "^2.5.1",
+		"webpack-remove-empty-scripts": "^1.0.4"
+	}
+}

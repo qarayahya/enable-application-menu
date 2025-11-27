@@ -1,0 +1,22 @@
+.enable-application-menu-dropdown__content,
+.application-menu-item__content {
+	.components-popover__content {
+		min-width: 260px;
+	}
+}
+.components-popover__content {
+	.components-button[role="menuitem"] {
+		width: 100%;
+		&.has-icon {
+			justify-content: space-between;
+			padding-left: 12px;
+		}
+	}
+}
+
+.application-menu-item__content {
+	.components-menu-item__button {
+		height: auto !important;
+		text-align: left !important;
+	}
+}
