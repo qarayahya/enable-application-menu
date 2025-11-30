@@ -24,24 +24,24 @@ const ApplicationMenu = () => {
 		window.open(url);
 	}, []);
 
-	// Get the current option value.
-	const siteData = useSelect((select) => select("core").getSite()?.url, []);
+	// Use the absolute site URL so admin links work even on subdirectory installs (e.g. Multisites).
+	const siteUrl = useSelect((select) => select("core").getSite()?.url, []);
 
-	const dashboardUrl = siteData ? `${siteData}/wp-admin/` : "/wp-admin/";
-	const stylesUrl = siteData
-		? `${siteData}/wp-admin/site-editor.php?path=/wp_global_styles`
+	const dashboardUrl = siteUrl ? `${siteUrl}/wp-admin/` : "/wp-admin/";
+	const stylesUrl = siteUrl
+		? `${siteUrl}/wp-admin/site-editor.php?path=/wp_global_styles`
 		: "/wp-admin/site-editor.php?path=/wp_global_styles";
-	const templatesUrl = siteData
-		? `${siteData}/wp-admin/site-editor.php?path=/wp_template`
+	const templatesUrl = siteUrl
+		? `${siteUrl}/wp-admin/site-editor.php?path=/wp_template`
 		: "/wp-admin/site-editor.php?path=/wp_template";
-	const patternsUrl = siteData
-		? `${siteData}/wp-admin/site-editor.php?path=/patterns`
+	const patternsUrl = siteUrl
+		? `${siteUrl}/wp-admin/site-editor.php?path=/patterns`
 		: "/wp-admin/site-editor.php?path=/patterns";
-	const mediaUrl = siteData
-		? `${siteData}/wp-admin/upload.php`
+	const mediaUrl = siteUrl
+		? `${siteUrl}/wp-admin/upload.php`
 		: "/wp-admin/upload.php";
-	const pluginsUrl = siteData
-		? `${siteData}/wp-admin/plugins.php`
+	const pluginsUrl = siteUrl
+		? `${siteUrl}/wp-admin/plugins.php`
 		: "/wp-admin/plugins.php";
 
 	return (
@@ -113,25 +113,10 @@ const ApplicationMenu = () => {
 								</Button>
 							</MenuGroup>
 							<MenuGroup>
-								{/* <MenuItem
-									suffix={<Icon icon={chevronRight} size={16} />}
-									onClick={() => {
-										onClose();
-									}}
-								>
-									{__("Document", "enable-application-menu")}
-								</MenuItem> */}
+								{/* TODO: add document menu item */}
 								<ViewMenuItems />
 								<EditMenuItems />
-								{/* <MenuItem
-									suffix={<Icon icon={chevronRight} size={16} />}
-									onClick={() => {
-										openLinks(pluginsUrl);
-										onClose();
-									}}
-								>
-									{__("Plugins", "enable-application-menu")}
-								</MenuItem> */}
+								{/* TODO: add plugins menu item */}
 							</MenuGroup>
 							<MenuGroup>
 								<Button
