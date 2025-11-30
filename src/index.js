@@ -40,9 +40,6 @@ const ApplicationMenu = () => {
 	const mediaUrl = siteUrl
 		? `${siteUrl}/wp-admin/upload.php`
 		: "/wp-admin/upload.php";
-	const pluginsUrl = siteUrl
-		? `${siteUrl}/wp-admin/plugins.php`
-		: "/wp-admin/plugins.php";
 
 	return (
 		<>

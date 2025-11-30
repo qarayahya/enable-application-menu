@@ -573,7 +573,6 @@ const ApplicationMenu = () => {
   const templatesUrl = siteUrl ? `${siteUrl}/wp-admin/site-editor.php?path=/wp_template` : "/wp-admin/site-editor.php?path=/wp_template";
   const patternsUrl = siteUrl ? `${siteUrl}/wp-admin/site-editor.php?path=/patterns` : "/wp-admin/site-editor.php?path=/patterns";
   const mediaUrl = siteUrl ? `${siteUrl}/wp-admin/upload.php` : "/wp-admin/upload.php";
-  const pluginsUrl = siteUrl ? `${siteUrl}/wp-admin/plugins.php` : "/wp-admin/plugins.php";
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.__experimentalMainDashboardButton, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Dropdown, {
